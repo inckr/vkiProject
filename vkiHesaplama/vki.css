@@ -57,7 +57,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background: #999;
-  background-image: url(/down-arrow.png);
+  background-image: url(../images/down-arrow.png);
   background-size: 1rem;
   background-repeat: no-repeat;
   background-position: right 0.5rem center;
@@ -96,7 +96,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background: #999;
-  background-image: url(/down-arrow.png);
+  background-image: url(../images/down-arrow.png);
   background-size: 1rem;
   background-repeat: no-repeat;
   background-position: right 0.5rem center;
@@ -136,12 +136,12 @@ body {
   display: inline-block;
   width: 53px;
   height: 209px;
-  background-image: url(/man.png);
+  background-image: url(../images/man.png);
   cursor: pointer;
 }
 
 .vki-man.active, .vki-man:hover {
-  background-image: url(/man-active.png);
+  background-image: url(../images/man-active.png);
 }
 
 .vki-woman {
@@ -150,18 +150,18 @@ body {
   height: 207px;
   margin-top: 2px;
   cursor: pointer;
-  background-image: url(/woman.png);
+  background-image: url(../images/woman.png);
 }
 
 .vki-woman.active, .vki-woman:hover {
-  background-image: url(/woman-active.png);
+  background-image: url(../images/woman-active.png);
 }
 
 .hesapla {
   display: inline-block;
   width: 170px;
   height: 55px;
-  background-image: url(/hesapla.png);
+  background-image: url(../images/hesapla.png);
   cursor: pointer;
   background-size: 100%;
   margin-right: 10rem;
@@ -175,5 +175,5 @@ body {
   box-shadow: 2px 2px 10px 4px black;
   /* width: 180px;
     height: 65px; */
-  background-image: url(/hesapla-active.png);
+  background-image: url(../images/hesapla-active.png);
 }
