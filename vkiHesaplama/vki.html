@@ -1,90 +1,73 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VKI (Body Mass Index)</title>
-  <link rel="stylesheet" href="./vki.css">
-   
-</head>
-<body>
-  <div class="h-tag">
-  <h1>Vücut Kitle Endeksi Hesaplama</h1> <hr>
-  <h2>Body Mass Index Calculation</h2>
-</div>  
-  <div class="container">
-        
-          <div class="col-md-3 col-xs-6">
-              <div class="vki-gender">
-                <div class="vki-man" gender="man" onclick="selectGender('man')"></div>
-              </div>
-              <div class="vki-gender">
-                <div class="vki-woman" gender="woman" onclick="selectGender('woman')"></div>
-              </div>
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VKI (Body Mass Index)</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./vki.css" />
+  </head>
+
+  <!-- Start Code -->
+  <body>
+    <div class="bigTitle">
+      <h1>Vücut Kitle Endeksi Hesaplama</h1>
+      <hr />
+      <h2>Body Mass Index Calculation</h2>
+    </div>
+
+    <!-- Containe r-->
+    <div class="container">
+      <div class="col-md-3 col-xs-6">
+
+        <!-- Gender -->
+        <div class="vki-gender">
+          <div class="vki-man" gender="man" onclick="selectGender('man')"></div>
+        </div>
+        <div class="vki-gender">
+          <div
+            class="vki-woman"
+            gender="woman"
+            onclick="selectGender('woman')"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Kilo ve Boy Seçimi -->
+      <div class="col-md-5 col-xs-6">
+        <div class="border">
+          <div class="title">
+            <span class="kiloTitle">Kilonuz (Kg)</span>
           </div>
- <!----------------------------------------------->
+          <div class="select-kilo">
+            <select id="kiloSelect"></select>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-6">
+          <div class="border">
+            <div class="titleBoy">
+              <span class="boyTitle">Boyunuz (Cm)</span>
+            </div>
+            <div class="select-boy">
+              <select id="boySelect"></select>
+            </div>
+          </div>
+        </div>
 
+        <!-- Hesaplama Butonu -->
+        <div class="button" id="button">
+          <button
+            onclick="hesapla()"
+            name="hesapla"
+            id="hesapla"
+            class="hesapla"
+          ></button>
+        </div>
+      </div>
+    </div>
 
-
-          <div class="col-md-5 col-xs-6"> 
-            <div class="border">
-              <div class="title">
-                <span class="kiloTitle">Kilonuz (Kg)</span>
-              </div>
-                  <div class="select-kilo">
-                    <select id="kiloSelect">
-                    </select>
-                  </div>
-              </div>
-              <div class="col-md-5 col-xs-6">
-              <div class="border">
-              <div class="titleBoy">
-                <span class="boyTitle">Boyunuz (Cm)</span>
-              </div>
-                <div class="select-boy">
-                    <select id="boySelect">
-                      
-                    </select>
-                  </div>
-                </div>
-              </div>            
-                <div class="button" id="button">
-                  <button onclick='hesapla()' name="hesapla" id="hesapla" class="hesapla">
-                  </button>
-                </div>
-              </div>  
-            </div> 
-         
-
-    
-
-
-    <script type="text/javascript"
-data-cfasync="false" src="./vki.js"></script> 
-
-   
-     
-  
-
-    <!-- <script>
-       function hesapla(){
-    var kilo=document.getElementById("kilo").value;
-    var boy=document.getElementById("boy").value;
-    var k=kilo;
-    var b=boy / 100;
-    var h=k/(b*b);
-    if(h<18){
-        alert(h + " => Zayıf 'Kilo almanız gerekir.'")
-    } else if(h>=18 && h<25){
-        alert(h + " => Normal 'Kilonuz gayet normal.'")
-    } else{
-        alert(h + " => Kilolu 'Sağlığınız için kilo vermeniz gerekiyor.'")
-    }
-  }
-    </script> -->
-    <script>
-      
-    </script>
-</body>
+    <!-- JS -->
+    <script type="text/javascript" data-cfasync="false" src="./vki.js"></script>
+  </body>
 </html>

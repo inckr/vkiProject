@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VKI (Body Mass Index)</title>
+    
     <!-- Css -->
     <link rel="stylesheet" href="./register.css">
-
-    <!-- Js -->
-    <!-- <link rel="stylesheet" href="vki.js" /> -->
 
     <!-- Font-Awesome -->
     <link
@@ -18,17 +16,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- Bootstrap5 -->
-    
 </head>
+
+<!-- Start Code -->
 <body>
-    <!-- Start Codes -->
     <div class="h-tag">
       <h1>Vücut Kitle Endeksi Kayıt
       </h1> <hr>
       <h2>Body Mass Index Register</h2>
     </div> 
+
     <!-- Container -->
     <div>
       <form action="#" method="get">
@@ -83,7 +80,6 @@
         <br>
 
         <!-- Password -->
-      
         <td>
           <label for="upassword" id="upassword-label"> Şifreniz </label>
       </td>
@@ -94,9 +90,7 @@
                   type="password"
                   id="upassword"
                   name="upassword"
-                  placeholder="Lütfen şifrenizi girin.." required
-                  
-              />
+                  placeholder="Lütfen şifrenizi girin.." required/>
               <span class="password-toggle" onclick="togglePasswordVisibility()">
                   <i id="togglePasswordIcon" class="icon fa-solid fa-eye"></i>
               </span>
@@ -105,7 +99,6 @@
       <br>
 
         <!-- Comparing Password -->
-
         <td>
           <div style="margin-left: 1.5rem;" class="cpassword">
               <i class="icon fa-solid fa-unlock-keyhole"></i>
@@ -113,17 +106,13 @@
                   type="password"
                   id="cpassword"
                   name="cpassword"
-                  placeholder="Lütfen şifrenizi girin.." required
-                  
-              />
+                  placeholder="Lütfen şifrenizi girin.." required/>
               <span class="password-toggle" onclick="toggleCPasswordVisibility()">
                   <i id="toggleCPasswordIcon" class="icon fa-solid fa-eye"></i>
               </span>
           </div>
       </td>
       <br>
-
-         
 
       <!-- Button (Kayıt Ol) -->
       <td>
@@ -133,6 +122,8 @@
             </td>
     </form>
 </div>
+
+ <!-- Js -->
 <script src="./register.js"></script>
 </body>
 </html>
