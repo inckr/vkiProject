@@ -43,10 +43,10 @@ function hesapla() {
         h.toFixed(1) +
         " Değerinize göre tıbben NORMAL kategorisindesiniz. Sizi tebrik eder, bundan sonraki yaşamınızda da formunuzu korumanızı dileriz."
     );
-  } else if ("=> " + h > 25 && h < 29.99) {
-    alert(
+  } else if (h > 25 && h < 29.99) {
+    alert("=> "+
       h.toFixed(1) +
-        "Değerinize göre tıbben KİLOLU kategorisindesiniz. Size medikal tedavi öneriyoruz. Diyet ve egzersiz yaparak ideal kilonuza ulaşabilirsiniz. Bunun için kliniğe başvurbilirsiniz."
+        " Değerinize göre tıbben KİLOLU kategorisindesiniz. Size medikal tedavi öneriyoruz. Diyet ve egzersiz yaparak ideal kilonuza ulaşabilirsiniz. Bunun için kliniğe başvurbilirsiniz."
     );
   } else {
     alert(
